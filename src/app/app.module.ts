@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { SimpleDataGridModule } from 'simple-data-grid';
+import { DataGridModule } from '@andrvm/data-grid';
+
 
 
 @NgModule({
@@ -11,7 +11,7 @@ import { SimpleDataGridModule } from 'simple-data-grid';
   ],
   imports: [
     BrowserModule,
-    SimpleDataGridModule
+    DataGridModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]

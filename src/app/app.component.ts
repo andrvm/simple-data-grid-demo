@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TableColumn } from 'simple-data-grid';
+import { TableColumn } from '@andrvm/data-grid';
+
+
 
 
 @Component({
@@ -11,8 +13,6 @@ export class AppComponent implements OnInit {
 
   columns: TableColumn[] = [];
   data: any[];
-
-  title = 'simple-data-grid-demo';
 
   ngOnInit() {
 
@@ -27,7 +27,8 @@ export class AppComponent implements OnInit {
       },
       {
         userName: 'Active', sysName: 'active', isSort: true, isView: true, type: 'boolean',
-        filter: {type: 'boolean', on: true, value: ''}
+        filter: {type: 'boolean', on: true, value: ''},
+        colorCondition: {color: '#dedede', condition: 'equal', conditionValue: true}
       },
       {
         userName: 'Version', sysName: 'version', isSort: true, isView: true, type: 'number',

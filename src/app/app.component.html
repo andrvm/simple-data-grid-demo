@@ -1,16 +1,16 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-12">
-      <lib-ma-simple-data-grid
+      <lib-data-grid
               [data]="data || []"
               [columns]="columns"
-              (addData)="add()"
               [canDeleteData]="true"
               [canEditData]="true"
               [canViewData]="true"
+              (addData)="add()"
               (viewObject)="view($event)"
               (editObject)="edit($event)"
-              (removeId)="remove($event)"></lib-ma-simple-data-grid>
+              (removeId)="remove($event)"></lib-data-grid>
     </div>
   </div>
 </div>
